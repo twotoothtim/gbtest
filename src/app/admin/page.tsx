@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { Buy, createBuy, updateBuy, getBuys, totalKitsForBuy, nextTierForBuy, getRegistrations } from '@/lib/store';
-import { formatCountdown } from '@/lib/use-countdown';
+import { formatCountdown, useCountdown } from '@/lib/use-countdown';
 
 function ParticipantRow({ reg, buyId }: { reg: any; buyId: string }) {
   function handleShip() {
