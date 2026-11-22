@@ -63,7 +63,7 @@ export default function AdminPage() {
   const [signupDurationHours, setSignupDurationHours] = useState(48);
 
   function forceRender() {
-    setBuys(buys); // re-render hook to show updates
+   setBuys(getBuys());
   }
 
   useEffect(() => {
@@ -111,12 +111,6 @@ export default function AdminPage() {
     updateBuy(buy.id, { status: 'open' });
     forceRender();
   }
-
-  // Preload initial buys
-  useEffect(() => {
-    const storeBuys = getBuys();
-    setBuys(storeBuys);
-  }, [storeBuys]);
 
   return (
     <div className="min-h-screen bg-gray-100">
