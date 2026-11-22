@@ -7,12 +7,6 @@
 const fs = require('fs');
 const path = require('path');
 
-// File paths
-const FILES_TO_CREATE = {
-  '.env.example': '',
-  'scripts/create-docs.js': ''
-};
-
 console.log('📝 Creating documentation files on first install...\n');
 
 try {
@@ -95,13 +89,13 @@ git push -u origin main
 
 ### 6. Cloudflare Security Settings ✅
 - **Security Headers:**
-    ```yaml
+    \`\`\`yaml
 Cross-Origin-Embedder-Policy: require-corp
 Cross-Origin-Opener-Policy: same-origin
 Strict-Transport-Security: max-age=31536000; includeSubDomains
 Content-Security-Policy: default-src 'self' script-src 'self' style-src 'self' img-src 'self' data: https:
 X-Frame-Options: DENY
-    ```
+    \`\`\`
 - **WAF Rules:** Enable rate limiting and block suspicious IP ranges if needed
 - **Cache Settings:** Cache static assets with appropriate TTL; exclude admin/API routes
 
