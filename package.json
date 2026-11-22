@@ -20,6 +20,7 @@
     "postgres": "^3.4.5"
   },
   "devDependencies": {
+     "@vitejs/plugin-react": "^4.3.4",
     "@types/node": "^20.16.11",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
