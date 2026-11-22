@@ -5,6 +5,13 @@ import Link from 'next/link';
 import { Buy, createBuy, updateBuy, getBuys, totalKitsForBuy, nextTierForBuy, getRegistrations } from '@/lib/store';
 import { formatCountdown, useCountdown } from '@/lib/use-countdown';
 
+function BuyCountdown({ deadline }: { deadline: number }) {
+  const countdown = useCountdown(deadline);
+  return <>{formatCountdown(countdown)}</>;
+}
+
+
+
 function ParticipantRow({ reg, buyId }: { reg: any; buyId: string }) {
   function handleShip() {
     if (!reg.id) return;
@@ -253,7 +260,9 @@ export default function AdminPage() {
                       <button onClick={() => handleReopen(buy.id)} className="text-green-600 hover:text-green-700 text-sm font-medium underline">Reopen Buy</button>
                     )}
 
-                    <span className="text-xs bg-gray-100 border px-2 py-1 rounded">{buy.deadline ? formatCountdown(buy.deadline) : 'N/A'}</span>
+                 <span className="text-xs bg-gray-100 border px-2 py-1 rounded">
+  {buy.deadline ? <BuyCountdown deadline={buy.deadline} /> : 'N/A'}
+</span>
                   </div>
 
                 </div>
