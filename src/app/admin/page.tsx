@@ -108,7 +108,7 @@ export default function AdminPage() {
   function handleReopen(id: string) {
     const buy = buys.find((b) => b.id === id);
     if (!buy) return;
-    updateBuy(buy.id, { status: 'open', closedAt: undefined });
+    updateBuy(buy.id, { status: 'open' });
     forceRender();
   }
 
