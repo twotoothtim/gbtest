@@ -1,0 +1,38 @@
+{
+  "name": "groupbuy",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Tiered group buys for research-use-only peptide products with Stripe/crypto/cash fallback rails.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "vitest run",
+    "prepare": "node scripts/create-docs.js && husky install"}]
+  },
+  "dependencies": {
+    "@stripe/react-stripe-js": "^2.7.3",
+    "@stripe/stripe-js": "^4.10.0",
+    "next": "14.2.5",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "postgres": "^3.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.16.11",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "autoprefixer": "^10.4.20",
+    "eslint": "^9.3.0",
+    "eslint-config-next": "15.0.0",
+    "husky": "^9.0.11",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17",
+    "typescript": "^5.6.2",
+    "vitest": "^2.0.4"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  }
+}

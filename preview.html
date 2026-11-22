@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>PepBuy — Research Use Only Group Buys (Live Preview)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50 text-gray-900 antialiased min-h-screen">
+
+<!-- Sticky RUO banner -->
+<header class="sticky top-0 z-50 bg-red-700 text-white px-4 py-3 text-center font-bold shadow-md">
+  <p class="text-xs sm:text-sm leading-snug">⚠️ RESEARCH USE ONLY — NOT FOR HUMAN CONSUMPTION OR MEDICAL USE.</p>
+</header>
+
+<!-- Site nav -->
+<nav class="bg-white border-b border-gray-200 px-4 py-3 flex items-center justify-between shadow-sm">
+  <a href="#landing" class="text-xl font-extrabold text-indigo-700 tracking-tight">PepBuy<span class="text-red-600">.ruo</span></a>
+  <div class="flex items-center gap-5 text-sm font-medium text-gray-700">
+    <a href="#landing" class="hover:text-indigo-700">Active Buys</a>
+    <a href="#dashboard" class="hover:text-indigo-700">My Orders</a>
+    <a href="#admin" class="bg-gray-900 text-white px-4 py-2 rounded hover:bg-gray-700">Admin Panel</a>
+  </div>
+</nav>
+
+<main>
+<!-- Landing -->
+<section id="landing" class="py-12">
+  <!-- Hero -->
+  <section class="bg-gradient-to-r from-indigo-900 to-blue-800 text-white py-16 px-4 mb-8">
+    <div class="max-w-4xl mx-auto text-center">
+      <h1 class="text-3xl md:text-5xl font-extrabold mb-4">Tiered Group Buys for Research Peptides</h1>
+      <p class="text-lg text-blue-100 mb-8">The more kits the group commits, the lower your price per kit. Lock in with a $20 deposit — pay the balance after the buy closes.</p>
+    </div>
+  </section>
+
+  <!-- Active buys -->
+  <div class="max-w-5xl mx-auto px-4 mb-8">
+    <h2 class="text-2xl font-bold mb-6 text-gray-800 text-center">Active Group Buys</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+
+      <!-- Buy Card 1 -->
+      <article class="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-3 gap-2">
+          <div>
+            <h3 class="text-lg font-bold text-gray-900">Retatrutide Open Buy — Batch #12</h3>
+            <p class="text-sm text-indigo-700 font-medium mt-1">Retatrutide (10 x 3mL vials, 10mg per vial)</p>
+          </div>
+          <span class="shrink-0 px-3 py-1 rounded-full text-xs font-semibold bg-green-100 text-green-800">OPEN</span>
+        </div>
+
+        <!-- Pricing -->
+        <div class="bg-gray-50 border border-gray-100 rounded-lg p-3 mb-4">
+          <div class="flex justify-between items-baseline">
+            <p class="text-xs text-gray-600">7 kits committed so far</p>
+            <p class="text-xl font-extrabold text-green-700">$120.00/kit</p>
+          </div>
+          <div class="flex justify-between text-xs text-gray-500 mt-2 mb-1">
+            <span>10 kits for next tier → $115.00</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
+            <div class="bg-indigo-600 h-full" style="width:70%" />
+          </div>
+        </div>
+
+        <!-- Countdown -->
+        <div class="text-center py-2 rounded-lg mb-4 text-sm font-semibold bg-amber-50 text-amber-800">Closes in 1d 2h 15m</div>
+
+        <a href="#" class="text-center font-semibold py-3 rounded-lg shadow-sm bg-indigo-600 hover:bg-indigo-700 text-white">Join — $20 deposit</a>
+
+        <p class="text-xs text-gray-500 mt-4">Kit = 10 x 3mL vials · Shipping $10/person · Final payment due within 24h after close.</p>
+        <div class="mt-3 p-2 bg-red-50 text-red-800 text-xs rounded-lg font-medium">⚠️ RESEARCH USE ONLY — NOT FOR HUMAN CONSUMPTION.</div>
+      </article>
+
+      <!-- Buy Card 2 -->
+      <article class="bg-white border border-gray-200 rounded-xl shadow-sm hover:shadow-md transition p-6 flex flex-col">
+        <div class="flex justify-between items-start mb-3 gap-2">
+          <div>
+            <h3 class="text-lg font-bold text-gray-900">Semaglutide Research Buy — Batch #7</h3>
+            <p class="text-sm text-indigo-700 font-medium mt-1">Semaglutide (10 x 3mL vials, 1mg per vial)</p>
+          </div>
+          <span class="shrink-0 px-3 py-1 rounded-full text-xs font-semibold bg-green-100 text-green-800">OPEN</span>
+        </div>
+
+        <!-- Pricing -->
+        <div class="bg-gray-50 border border-gray-100 rounded-lg p-3 mb-4">
+          <div class="flex justify-between items-baseline">
+            <p class="text-xs text-gray-600">5 kits committed so far</p>
+            <p class="text-xl font-extrabold text-green-700">$95.00/kit</p>
+          </div>
+          <div class="flex justify-between text-xs text-gray-500 mt-2 mb-1">
+            <span>10 kits for next tier → $92.00</span>
+          </div>
+          <div class="w-full bg-gray-200 rounded-full h-2 overflow-hidden">
+            <div class="bg-indigo-600 h-full" style="width:50%" />
+          </div>
+        </div>
+
+        <!-- Countdown -->
+        <div class="text-center py-2 rounded-lg mb-4 text-sm font-semibold bg-amber-50 text-amber-800">Closes in 1d 2h 15m</div>
+
+        <a href="#" class="text-center font-semibold py-3 rounded-lg shadow-sm bg-indigo-600 hover:bg-indigo-700 text-white">Join — $20 deposit</a>
+
+        <p class="text-xs text-gray-500 mt-4">Kit = 10 x 3mL vials · Shipping $10/person · Final payment due within 24h after close.</p>
+        <div class="mt-3 p-2 bg-red-50 text-red-800 text-xs rounded-lg font-medium">⚠️ RESEARCH USE ONLY — NOT FOR HUMAN CONSUMPTION.</div>
+      </article>
+
+    </div>
+
+    <!-- How it works -->
+    <section class="mt-14 bg-white border rounded-xl p-6 shadow-sm mb-8">
+      <h3 class="text-lg font-bold mb-4 text-gray-800">How group buys work</h3>
+      <ol class="grid md:grid-cols-4 gap-4 text-sm text-gray-700 list-none">
+        {[
+          ['1. Register', 'Create a free account and pick how many kits you want for an open buy.'],
+          [`2. Pay the $${20} deposit`, 'Secures your kits at your current tier price. Refundable before the buy closes.'],
+          ['3. Buy closes', 'Admin locks quantities and places the supplier order. Balance + shipping become due within the posted window.'],
+          ['4. Fulfillment', 'Direct shipment to you, or admin collection → testing → distribution to purchasers.'],
+        ].map(([title, body]) => (
+          <li key={title} class="bg-gray-50 border rounded-lg p-3">
+            <p class="font-semibold text-indigo-700 mb-1">{title}</p>
+            {body}
+          </li>
+        ))}
+      </ol>
+    </section>
+
+    <p class="text-center text-gray-600 text-sm">Deposit $20/participant · Shipping $10/person · Final payment due within countdown window or the deposit is forfeited.</p>
+  </div>
+
+  <!-- Buy detail demo -->
+  <section id="buydetail" class="bg-indigo-50 border-t pt-8 mb-8">
+    <h2 class="text-xl font-bold mb-4 text-gray-900 px-4">Buy Detail — Retatrutide Open Buy</h2>
+    <div class="max-w-5xl mx-auto p-6 grid md:grid-cols-2 gap-6">
+
+      <!-- Left column: pricing + tiers -->
+      <section class="bg-white border rounded-xl shadow-sm p-6">
+        <h2 class="text-lg font-bold mb-4 text-gray-800">Group Pricing Tiers</h2>
+        <p class="text-xs text-gray-500 mb-3">Price per kit drops as total committed kits grow. Current commitment: 7 kits.</p>
+
+        <table class="w-full border-collapse text-sm">
+          <thead>
+            <tr class="bg-indigo-50 text-indigo-900">
+              <th class="text-left p-2 rounded-l-lg font-semibold">Total kits committed</th>
+              <th class="text-right p-2 font-semibold">Price / kit</th>
+            </tr>
+          </thead>
+          <tbody>
+            {[
+              ['1+ kits (base)', '$120.00'],
+              ['10–24 kits', '$115.00'],
+              ['25–49 kits', '$110.00'],
+              ['50+ kits', '$108.00'],
+            ].map(([label, price], idx) => {
+              const active = idx === 1; // highlight current tier
+              return (
+                <tr key={idx} class={`border-t ${active ? 'bg-green-50' : ''}`}>
+                  <td class={`p-2 ${active ? 'font-bold text-green-800' : 'text-gray-700'}`}>{label}</td>
+                  <td class={`p-2 text-right ${active ? 'font-extrabold text-green-700' : 'text-gray-700'}`}>{price}</td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+
+        <div class="mt-4 grid grid-cols-2 gap-3 text-sm">
+          <div class="bg-gray-50 rounded-lg p-3"><p class="text-xs text-gray-500">Deposit (secures your spot)</p><p class="font-bold text-gray-900">$20.00</p></div>
+          <div class="bg-gray-50 rounded-lg p-3"><p class="text-xs text-gray-500">Shipping (per person)</p><p class="font-bold text-gray-900">$10.00</p></div>
+        </div>
+
+        <!-- Join button -->
+        <button class="mt-4 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-8 rounded-lg shadow">Pay $20 Deposit to Reserve 1 Kit</button>
+        <p class="text-xs text-gray-500 mt-2">Deposit is refundable if you cancel before the buy closes.</p>
+      </section>
+
+      <!-- Right column: countdowns + fulfillment -->
+      <section class="space-y-6">
+        <div class="rounded-xl p-5 text-center bg-amber-50 border border-amber-200">
+          <p class="text-xs font-semibold uppercase tracking-wide text-gray-600 mb-1">Buy closes in</p>
+          <p class="text-3xl font-extrabold text-amber-800">1d 2h 15m</p>
+        </div>
+
+        <div class="bg-indigo-50 border border-indigo-200 rounded-xl p-5 text-center">
+          <p class="text-xs font-semibold uppercase tracking-wide text-gray-600 mb-1">Final payment due within 24h after close</p>
+          <p class="text-2xl font-extrabold text-indigo-800">Live Countdown</p>
+        </div>
+
+        <div class="bg-white border rounded-xl p-5 shadow-sm">
+          <h3 class="font-bold text-gray-800 mb-2">Fulfillment: Direct to you</h3>
+          <p class="text-sm text-gray-600">Kits ship directly from the distributor to your address after final payment clears. Tracking provided on your dashboard.</p>
+        </div>
+
+        <div class="bg-red-50 border border-red-200 text-red-800 text-xs rounded-lg p-3 font-medium">
+          ⚠️ RESEARCH USE ONLY — NOT FOR HUMAN CONSUMPTION OR MEDICAL USE. No dosing or safety information is provided with this product.
+        </div>
+      </section>
+
+    </div>
+
+    <!-- User status -->
+    <div class="max-w-5xl mx-auto p-6">
+      <h2 class="text-lg font-bold mb-4 text-gray-800 px-4">Your reservation — pepbuyer</h2>
+      <div class="grid sm:grid-cols-3 gap-3 text-sm bg-white border rounded-xl shadow-sm p-6">
+        <div class="bg-gray-50 rounded-lg p-3"><p class="text-xs text-gray-500">Kits reserved</p><p class="font-bold">1 kit</p></div>
+        <div class="bg-gray-50 rounded-lg p-3"><p class="text-xs text-gray-500">Deposit</p><p class="font-bold text-green-700">PAID ✓ ($20.00)</p></div>
+        <div class="bg-gray-50 rounded-lg p-3"><p class="text-xs text-gray-500">Final payment</p><p class="font-bold text-orange-600">$110.00 due</p></div>
+      </div>
+
+      <button class="mt-4 bg-green-600 hover:bg-green-700 text-white font-semibold py-3 px-8 rounded-lg shadow">Pay Balance — $110.00 (incl. shipping)</button>
+    </div>
+  </section>
+
+  <!-- Dashboard demo -->
+  <section id="dashboard" class="bg-gray-900 text-gray-200 pt-8 mb-8">
+    <h2 class="text-xl font-bold mb-4 px-6 text-white">My Orders — pepbuyer</h2>
+    <div class="max-w-5xl mx-auto p-6 space-y-6">
+
+      <!-- Order card -->
+      <article class="bg-gray-800 border rounded-xl shadow-sm p-6 flex items-start justify-between gap-3">
+        <div>
+          <h3 class="text-lg font-bold text-white mb-1">Retatrutide Open Buy — Batch #12</h3>
+          <p class="text-indigo-400 font-medium">Retatrutide (10 x 3mL vials, 10mg per vial)</p>
+        </div>
+
+        <span class="px-3 py-1 rounded-full text-xs font-bold bg-green-600 text-white">DEPOSIT PAID ✓</span>
+      </article>
+
+      <!-- Order card -->
+      <article class="bg-gray-800 border rounded-xl shadow-sm p-6 flex items-start justify-between gap-3">
+        <div>
+          <h3 class="text-lg font-bold text-white mb-1">Semaglutide Research Buy — Batch #7</h3>
+          <p class="text-indigo-400 font-medium">Semaglutide (10 x 3mL vials, 1mg per vial)</p>
+        </div>
+
+        <span class="px-3 py-1 rounded-full text-xs font-bold bg-green-600 text-white">DEPOSIT PAID ✓</span>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- Admin demo -->
+  <section id="admin" class="bg-gray-800 text-gray-200 pt-8 mb-8">
+    <h2 class="text-xl font-bold mb-4 px-6 text-white">Admin Panel — Active Group Buys</h2>
+
+    <!-- Left column: create buy form -->
+    <section class="md:col-span-5 bg-gray-900 border rounded shadow p-6 mr-8 ml-4">
+      <h3 class="text-xl font-bold mb-3 text-white">Create / Edit Group Buy</h3>
+
+      <div class="space-y-3 max-w-md">
+        <label class="block"><span class="block text-sm font-medium text-gray-300 mb-1">Buy Name</span><input placeholder="Retatrutide Open Buy — Batch #2" class="w-full border rounded px-3 py-2.5 text-sm"></label>
+        <label class="block"><span class="block text-sm font-medium text-gray-300 mb-1">Product</span><input placeholder="Retatrutide (10 x 3mL vials @ 10mg/vial)" class="w-full border rounded px-3 py-2.5 text-sm"></label>
+        <label class="block"><span class="block text-sm font-medium text-gray-300 mb-1">Fulfillment Mode</span><select class="w-full border rounded px-3 py-2.5 text-sm"><option value="direct">Direct Fulfillment (ship to participant)</option><option value="collection">Collection by Admin (test then distribute)</option></select></label>
+        <div class="grid grid-cols-2 gap-3"><label class="block"><span class="block text-sm font-medium text-gray-300 mb-1">Base Price / Kit ($)</span><input type="number" placeholder="120.00" class="w-full border rounded px-3 py-2.5 text-sm"></label></div>
+        <button class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 rounded shadow">Save Buy Configuration</button>
+      </div>
+    </section>
+
+    <!-- Right column: active buys -->
+    <section class="md:col-span-7 bg-gray-900 border rounded shadow p-6 ml-4 mr-8">
+      <h3 class="text-xl font-bold mb-4 text-white">Active Group Buys</h3>
+
+      <!-- Buy row 1 -->
+      <div class="border rounded-lg p-4 mb-6 bg-indigo-900/25 opacity-100">
+        <div class="flex justify-between items-start mb-3">
+          <div><h4 class="text-lg font-bold text-white">Retatrutide Open Buy — Batch #12</h4><span class="inline-block mt-1 px-2 py-1 rounded text-xs font-semibold bg-green-600 text-white">OPEN</span></div>
+          <button class="text-red-500 hover:text-red-700 text-sm font-medium underline">Close Early</button>
+        </div>
+
+        <!-- Participant table -->
+        <table class="w-full border-collapse text-sm mb-4 text-left">
+          <thead><tr><th class="border px-3 py-2 text-left font-semibold min-w-[250px]">Username (Status)</th><th class="border px-3 py-2 text-left font-semibold">Kits</th><th class="border px-3 py-2 text-left font-semibold">Tracking</th></tr></thead>
+          <tbody>
+            <tr><td class="border px-3 py-2">pepbuyer<span class="ml-2 text-xs font-bold bg-green-600 text-white px-2.5 py-1 rounded-full">DEPOSIT PAID ✓</span></td><td class="border px-3 py-2">1 kit</td><td class="border px-3 py-2"><button class="text-xs bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-3 py-1 rounded">Ship → tracking #</button></td></tr>
+          </tbody>
+        </table>
+
+        <!-- Summary -->
+        <div class="grid grid-cols-3 gap-2 text-xs bg-gray-800 p-3 rounded"><span><span class="font-medium">Total committed kits:</span></span><span>1</span><span><span class="font-medium">Next tier at:</span></span><span>10</span></div>
+
+        <!-- Deadline extension controls -->
+        <div class="mt-4 flex flex-wrap gap-2"><button class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium px-3 py-2 rounded text-sm">+1h</button><button class="bg-green-500 hover:bg-green-600 text-white font-medium px-3 py-2 rounded text-sm">+6h</button><button class="bg-green-600 hover:bg-green-700 text-white font-medium px-3 py-2 rounded text-sm">+24h</button></div>
+      </div>
+
+      <!-- Buy row 2 -->
+      <div class="border rounded-lg p-4 mb-6 bg-indigo-900/25 opacity-100">
+        <div class="flex justify-between items-start mb-3">
+          <div><h4 class="text-lg font-bold text-white">Semaglutide Research Buy — Batch #7</h4><span class="inline-block mt-1 px-2 py-1 rounded text-xs font-semibold bg-green-600 text-white">OPEN</span></div>
+          <button class="text-red-500 hover:text-red-700 text-sm font-medium underline">Close Early</button>
+        </div>
+
+        <!-- Participant table -->
+        <table class="w-full border-collapse text-sm mb-4 text-left">
+          <thead><tr><th class="border px-3 py-2 text-left font-semibold min-w-[250px]">Username (Status)</th><th class="border px-3 py-2 text-left font-semibold">Kits</th><th class="border px-3 py-2 text-left font-semibold">Tracking</th></tr></thead>
+          <tbody><tr><td class="border px-3 py-2">pepbuyer<span class="ml-2 text-xs font-bold bg-green-600 text-white px-2.5 py-1 rounded-full">DEPOSIT PAID ✓</span></td><td class="border px-3 py-2">1 kit</td><td class="border px-3 py-2"><button class="text-xs bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-3 py-1 rounded">Ship → tracking #</button></td></tr></tbody>
+        </table>
+
+        <!-- Summary -->
+        <div class="grid grid-cols-3 gap-2 text-xs bg-gray-800 p-3 rounded"><span><span class="font-medium">Total committed kits:</span></span><span>1</span><span><span class="font-medium">Next tier at:</span></span><span>10</span></div>
+
+        <!-- Deadline extension controls -->
+        <div class="mt-4 flex flex-wrap gap-2"><button class="bg-yellow-500 hover:bg-yellow-600 text-white font-medium px-3 py-2 rounded text-sm">+1h</button><button class="bg-green-500 hover:bg-green-600 text-white font-medium px-3 py-2 rounded text-sm">+6h</button><button class="bg-green-600 hover:bg-green-700 text-white font-medium px-3 py-2 rounded text-sm">+24h</button></div>
+      </div>
+
+    </section>
+  </section>
+
+</main>
+
+<!-- Footer -->
+<footer class="bg-gray-900 text-gray-300 py-8 mt-16">
+  <div class="max-w-5xl mx-auto px-4 text-center space-y-2">
+    <p class="text-sm font-semibold text-white">Research Use Only — Always.</p>
+    <p class="text-xs max-w-3xl mx-auto">All products sold through this platform are intended strictly for laboratory and research purposes. They are not drugs, are not approved by the FDA or any health authority, and must not be administered to humans or animals. By purchasing you agree to our Terms of Service and represent that you are 18+ and will use all materials in a lawful manner for research only.</p>
+    <p class="text-xs text-gray-500">© 2025 Group Buy Platform — All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
